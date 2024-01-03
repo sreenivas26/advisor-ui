@@ -1,0 +1,42 @@
+.launch-icon {
+  position: absolute;
+  right: 1rem;
+  width: 20px;
+}
+.cds--overflow-menu-options {
+  background-color: #262626 !important;
+}
+.cds--overflow-menu-options__option-content {
+  color: #c6c6c6 !important;
+}
+.cds--overflow-menu-options__btn:focus {
+  outline: 2px solid #ffffff !important;
+  outline-offset: -2px !important;
+}
+.cds--overflow-menu-options__btn:hover {
+  color: #f4f4f4 !important;
+}
+.cds--overflow-menu-options__option:hover {
+  background-color: rgba(141, 141, 141, 0.16) !important;
+}
+.cds--overflow-menu.cds--overflow-menu--open,
+.cds--overflow-menu.cds--overflow-menu--open .cds--overflow-menu__trigger {
+  box-shadow: none !important;
+}
+.logo-img {
+  margin-left: 12px !important;
+}
+
+// .cds--header *, .cds--header *::before, .cds--header *::after {
+//   padding-left: 10px !important;
+// }
+
+a.cds--header__name, a.cds--header__name:hover {
+ padding-left: 5px !important;
+}
+
+.cds--overflow-menu > :first-child {
+  margin-block-start: 0;
+  width: 20px;
+  height: 20px;
+}

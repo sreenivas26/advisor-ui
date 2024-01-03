@@ -1,0 +1,16 @@
+@import 'constants/constants';
+
+html,
+body,
+#root {
+  background: $COLOR_GRAY_100;
+  color: $PRIMARY_FONT_COLOR;
+}
+
+
+
+#main-content, .Content {
+  min-height: 100vh;
+  background-color: transparent;
+  overflow: visible;
+}

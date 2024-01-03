@@ -1,0 +1,20 @@
+
+
+.cds--inline-notification--warning, .cds--inline-notification--warning-alt {
+    background:  #393939;
+    border-inline-start: 3px solid var(--cds-support-warning-inverse, #f1c21b);
+}
+
+.cds--inline-notification {
+ 
+    color: #ffffff;
+} 
+
+.cds--inline-notification__close-button .cds--inline-notification__close-icon {
+    fill: #ffffff;
+  }
+
+.cds--inline-notification__icon {
+    display: none; 
+
+  }

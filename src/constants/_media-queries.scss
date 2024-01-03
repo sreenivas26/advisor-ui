@@ -1,0 +1,27 @@
+/* media-queries */
+
+$break-extra-small: 480px;
+$break-small: 767px;
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $break-small) {
+      @content;
+    }
+  }
+  @else if $media == mobile-portrait {
+    @media only screen and (max-width: $break-extra-small) {
+      @content;
+    }
+  }
+  @else if $media == mobile-landscape {
+    @media only screen and (orientation:landscape) and (max-width: $break-small) {
+      @content;
+    }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-small + 1) {
+      @content;
+    }
+  }
+}
