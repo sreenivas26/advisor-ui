@@ -1,3 +1,11 @@
 language: node_js
 node_js:
-  - 18-alpine
+  - "18-alpine"
+sudo: required
+services:
+  - docker
+before_script:
+  - npm install
+script:
+  - npm test
+  - docker build -t ui-advisor .
