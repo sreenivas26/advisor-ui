@@ -19,6 +19,6 @@ deploy:
   OC_PROJECT_NAME: advisor-dev  
   on: 
     repo: sreenivas26/ui-advisor
-    branches: 
+    branch: 
       only:
         - main
