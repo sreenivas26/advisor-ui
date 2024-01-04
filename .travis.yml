@@ -17,3 +17,5 @@ deploy:
   domain: $domain
   app: ui-advisor
   OC_PROJECT_NAME: advisor-dev  
+  on: 
+    branches: main
