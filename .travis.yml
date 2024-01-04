@@ -5,7 +5,7 @@ sudo: required
 services:
   - docker
 before_script:
-  - npm install
+  - npm start
 script:
   - npm test
   - docker build -t ui-advisor .
