@@ -8,5 +8,5 @@ script:
   - docker build -t ui-advisor .
 after_success:
   - docker -D login $docker_registry_url -u $DOCKER_USER -p $DOCKER_PASSWORD 
-  - docker tag ui-advisor $docker_registry_url/ui-advisor:$TRAVIS_BUILD_NUMBER
-  - docker push $docker_registry_url/ui-advisor:$TRAVIS_BUILD_NUMBER
+  - docker tag ui-advisor $docker_registry_url/advisor-dev/ui-advisor:$TRAVIS_BUILD_NUMBER
+  - docker push $docker_registry_url/advisor-dev/ui-advisor:$TRAVIS_BUILD_NUMBER
