@@ -10,3 +10,10 @@ after_success:
   - docker -D login $docker_registry_url -u $DOCKER_USER -p $DOCKER_PASSWORD 
   - docker tag $imagename $docker_registry_url/$imagename:$TRAVIS_BUILD_NUMBER
   - docker push $docker_registry_url/$imagename:$TRAVIS_BUILD_NUMBER
+deploy:
+  provider: openshift
+  user: $user
+  password: $password
+  domain: $domain
+  app: ui-advisor
+  OC_PROJECT_NAME: advisor-dev  
