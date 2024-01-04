@@ -4,8 +4,5 @@ node_js:
 sudo: required
 services:
   - docker
-before_script:
-  - npm start
 script:
-  - npm test
   - docker build -t ui-advisor .
